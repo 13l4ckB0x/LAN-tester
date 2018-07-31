@@ -1,0 +1,27 @@
+Подключение LCD 2004 к Arduino Nano
+                                             +-----+                 
+		                              +----------| USB |---------+       
+		                              |          +-----+         |       
+		                              |        Arduino Nano      |       
+		                              |                          |       
+	               LCD 4 RS   D13   | [+]13/LED          12[+] |   D12  LCD 6 E
+		                        3V3   | [ ]3V3             11[+] |   D11  LCD 14 DB7 
+		                        AREF  | [ ]AREF            10[+]~|   D10  LCD 13 DB6  
+ 		                        A0    | [ ]A0               9[ ]~|   D9  
+ 		                        A1    | [ ]A1               8[ ]~|   D8  
+		                        A2    | [ ]A2               7[ ] |   D7  
+		                        A3    | [ ]A3               6[ ] |   D6  
+		                        A4    | [ ]A4               5[ ] |   D5  
+		                        A5    | [ ]A5               4[ ]~|   D4  
+		                        A6    | [ ]A6               3[ ]~|   D3  
+		                        A7    | [ ]A7               2[ ] |   D2  
+	               LCD 2 VCC  5V    | [+]5V             GND[+] |   GND  LCD 3 Vo, LCD 5 R/W
+		                        RST   | [ ]RST            RST[ ] |   RST 
+                 LCD 1 VSS  GND   | [+]GND           RX<0[+] |   RX<0 LCD 11 DB4   
+		                        VIN   | [ ]VIN           TX>1[+] |   TX>1 LCD 12 DB5  
+		                              |                          |
+		                              |       RST SCK MISO       |
+		                              |       [ ] [ ] [ ]        |
+		                              |       [ ] [ ] [ ]        |
+		                              |       GND MOSI 5V        |
+		                              +--------------------------+ 
